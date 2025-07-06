@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempoIA - Nós devolvemos o seu recurso mais valioso: Tempo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #020003 0%, #030106 5%, #050A1D 10%, #05194B 17%, #092869 21%, #20436D 27%, #102A4F 35%, #266294 39%, #398CBE 45%, #237CB8 54%, #2069AE 64%, #214E91 71%, #40A5D1 96%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #266294 0%, #398CBE 30%, #237CB8 60%, #40A5D1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(64, 165, 209, 0.3);
+        }
+        .section-padding {
+            padding: 5rem 0;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            gap: -2px;
+        }
+        .logo-text {
+            background: linear-gradient(to right, #214E91 0%, #40A5D1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .logo-icon {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px rgba(64, 165, 209, 0.3)) brightness(1.8) contrast(1.4) saturate(1.3);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <nav class="pt-8 pb-4">
+                <div class="logo-container">
+                    <img src="assets/OyBZA-urofnng5_Q.webp" alt="TempoIA Logo" class="logo-icon">
+                    <span class="logo-text">TempoIA</span>
+                </div>
+            </nav>
+            
+            <div class="flex flex-col items-center justify-center min-h-screen text-center mt-8">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Liberte seu <span class="text-gradient">Tempo</span>: Soluções de IA que ainda não existem, mas que você precisa
+                </h1>
+                
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl leading-relaxed">
+                    Junte-se à lista de espera e seja um dos primeiros a transformar seu negócio com automações inteligentes. Garanta um desconto exclusivo no lançamento!
+                </h2>
+                
+                <button class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
+                    Quero Acesso Antecipado e Desconto
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Sua equipe está presa no <span class="text-gradient">"trabalho sobre o trabalho"</span>?
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center p-8 bg-gray-50 rounded-2xl card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Leads que Esfriam</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Demora para responder a novos contatos? Cada minuto de atraso é uma oportunidade perdida.
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 bg-gray-50 rounded-2xl card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Tarefas que Sugam o Dia</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sua equipe gasta mais tempo em tarefas manuais do que em trabalho estratégico?
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 bg-gray-50 rounded-2xl card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Atendimento que Não Escala</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Seus clientes fazem as mesmas perguntas e você não tem pessoal para oferecer suporte 24/7?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gray-800">
+                    O que estamos construindo para você: <span class="text-gradient">Mais Tempo, Menos Esforço</span>
+                </h2>
+                
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Nós estamos desenvolvendo assistentes de inteligência artificial sob medida para profissionais e pequenas empresas, focados em eliminar tarefas repetitivas e liberar seu tempo para o que realmente importa. Imagine soluções que irão:
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-gradient font-semibold">Capturar e Qualificar 100% dos seus Leads</div>
+                        <p class="text-sm text-gray-500 mt-2">Sem perder oportunidades</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-gradient font-semibold">Automatizar o Agendamento</div>
+                        <p class="text-sm text-gray-500 mt-2">Diga adeus à troca infinita de e-mails</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-gradient font-semibold">Fornecer Suporte Instantâneo</div>
+                        <p class="text-sm text-gray-500 mt-2">Atendimento 24/7 para seus clientes</p>
+                    </div>
+                </div>
+                
+                <p class="text-lg text-gray-600 mb-8 font-medium">
+                    E muito mais... Estamos ouvindo o mercado para construir as soluções que você realmente precisa.
+                </p>
+                
+                <button class="bg-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg border-2 transition-all hover:shadow-xl" style="color: #266294; border-color: #40A5D1;">
+                    Saiba Mais e Garanta seu Desconto
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Seu caminho para a <span class="text-gradient">produtividade futura</span> em 3 passos simples
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center p-8 relative">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold" style="background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%);">
+                        1
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Manifeste seu Interesse</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Preencha nosso formulário rápido com seu nome e e-mail. Leva menos de 30 segundos.
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 relative">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold" style="background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%);">
+                        2
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Acompanhe o Desenvolvimento</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Receba atualizações exclusivas sobre o progresso das nossas soluções e insights sobre como a IA pode transformar seu dia a dia.
+                    </p>
+                </div>
+                
+                <div class="text-center p-8 relative">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold" style="background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%);">
+                        3
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Acesso Antecipado e Desconto</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Seja um dos primeiros a ter acesso às nossas ferramentas assim que estiverem prontas, com um desconto especial reservado apenas para nossa lista VIP.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gray-800">
+                    Tecnologia de ponta com a <span class="text-gradient">maturidade</span> que o seu negócio merece
+                </h2>
+                
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    A <span class="logo-text">TempoIA</span> é o resultado de mais de 30 anos de experiência em otimização de processos de negócios. 
+                    Nós unimos a sabedoria do mercado com a velocidade da inovação para usar a IA como uma ferramenta 
+                    poderosa para gerar eficiência e lucro.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">
+                Não perca a oportunidade de transformar seu tempo em vantagem competitiva
+            </h2>
+            
+            <p class="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+                O futuro da produtividade está sendo construído agora. Garanta seu lugar na vanguarda.
+            </p>
+            
+            <!-- Email Capture Form -->
+            <div class="max-w-md mx-auto mb-8 relative">
+                <p class="text-white/90 mb-4 text-lg">Preencha com o seu melhor e-mail</p>
+                <form id="emailForm" class="space-y-4">
+                    <div>
+                        <input 
+                            type="email" 
+                            id="emailInput" 
+                            placeholder="Digite seu melhor e-mail aqui"
+                            class="w-full px-6 py-4 text-lg border-2 border-white/20 rounded-full focus:border-white focus:outline-none transition-colors bg-white/10 backdrop-blur-sm text-white placeholder-white/70"
+                            required
+                        >
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        class="bg-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full"
+                        style="color: #266294;"
+                    >
+                        🎯 Garantir meu acesso antecipado!
+                    </button>
+                </form>
+                
+                <!-- Success Banner -->
+                <div id="successBanner" class="hidden mt-6 mx-auto text-center">
+                    <p id="successMessage" class="text-white font-medium text-base bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full inline-block shadow-lg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="logo-container mb-4">
+                        <img src="assets/OyBZA-urofnng5_Q.webp" alt="TempoIA Logo" class="logo-icon">
+                        <span class="logo-text">TempoIA</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Devolvemos o seu recurso mais valioso: Tempo.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Empresa</h4>
+                    <p class="text-gray-400 mb-2">Soluções de IA</p>
+                    <p class="text-gray-400">Automação Inteligente</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><span onclick="showPrivacyPolicy()" class="hover:text-white transition-colors cursor-pointer">Política de Privacidade</span></li>
+                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TempoIA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Privacy Policy Modal/Page -->
+    <div id="privacyPolicy" class="fixed inset-0 bg-white z-50 overflow-y-auto hidden">
+        <div class="container mx-auto px-4 py-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Header with back button -->
+                <div class="flex items-center justify-between mb-8">
+                    <div class="logo-container">
+                        <img src="assets/OyBZA-urofnng5_Q.webp" alt="TempoIA Logo" class="logo-icon">
+                        <span class="logo-text">TempoIA</span>
+                    </div>
+                    <button onclick="hidePrivacyPolicy()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full text-gray-700 font-medium transition-colors privacy-btn">
+                        ← Voltar à Landing Page
+                    </button>
+                </div>
+
+                <!-- Privacy Policy Content -->
+                <div class="prose max-w-none">
+                    <h1 class="text-4xl font-bold mb-8 text-gray-800">Política de Privacidade</h1>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <p class="text-blue-800 font-medium mb-2">Última atualização: Janeiro de 2025</p>
+                        <p class="text-blue-700">Esta Política de Privacidade descreve como a TempoIA coleta, usa e protege suas informações pessoais.</p>
+                    </div>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">1. Informações que Coletamos</h2>
+                    <p class="text-gray-600 mb-6">
+                        Coletamos informações que você nos fornece diretamente, incluindo:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Nome e endereço de e-mail quando você se inscreve em nossa lista de espera</li>
+                        <li>Informações sobre seu interesse em soluções de IA</li>
+                        <li>Comunicações que você nos envia</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">2. Como Usamos Suas Informações</h2>
+                    <p class="text-gray-600 mb-4">Usamos suas informações para:</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Manter você informado sobre o desenvolvimento de nossas soluções</li>
+                        <li>Enviar atualizações sobre o progresso de nossos produtos</li>
+                        <li>Oferecer acesso antecipado e descontos exclusivos</li>
+                        <li>Melhorar nossos serviços com base em seu feedback</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">3. Compartilhamento de Informações</h2>
+                    <p class="text-gray-600 mb-6">
+                        Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins comerciais. 
+                        Podemos compartilhar informações apenas quando:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Você der consentimento explícito</li>
+                        <li>For exigido por lei</li>
+                        <li>For necessário para proteger nossos direitos legais</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">4. Segurança dos Dados</h2>
+                    <p class="text-gray-600 mb-6">
+                        Implementamos medidas de segurança técnicas e organizacionais adequadas para proteger suas informações 
+                        contra acesso não autorizado, alteração, divulgação ou destruição.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">5. Seus Direitos</h2>
+                    <p class="text-gray-600 mb-4">Você tem o direito de:</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Acessar suas informações pessoais</li>
+                        <li>Corrigir informações incorretas</li>
+                        <li>Solicitar a exclusão de suas informações</li>
+                        <li>Cancelar a inscrição em nossa lista de espera a qualquer momento</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">6. Cookies e Tecnologias Similares</h2>
+                    <p class="text-gray-600 mb-6">
+                        Nosso site pode usar cookies para melhorar sua experiência. Você pode controlar o uso de cookies 
+                        através das configurações do seu navegador.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">7. Alterações nesta Política</h2>
+                    <p class="text-gray-600 mb-6">
+                        Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre mudanças 
+                        significativas por e-mail ou através de nossa lista de espera.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">8. Contato</h2>
+                    <p class="text-gray-600 mb-8">
+                        Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco através 
+                        de nossos canais de comunicação.
+                    </p>
+
+                    <!-- Footer button -->
+                    <div class="text-center mt-12">
+                        <button onclick="hidePrivacyPolicy()" class="btn-primary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg privacy-btn">
+                            Voltar à Landing Page
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Privacy Policy Functions
+        function showPrivacyPolicy() {
+            document.getElementById('privacyPolicy').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hidePrivacyPolicy() {
+            document.getElementById('privacyPolicy').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Scroll to email input function
+        function scrollToEmailInput() {
+            const emailInput = document.getElementById('emailInput');
+            console.log('Scrolling to email input:', emailInput); // Debug
+            
+            if (emailInput) {
+                emailInput.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+                
+                // Focus on the input after scroll
+                setTimeout(() => {
+                    emailInput.focus();
+                    console.log('Email input focused'); // Debug
+                }, 800);
+            } else {
+                console.error('Email input not found');
+            }
+        }
+
+        // Show success banner function
+        function showSuccessBanner(email) {
+            const banner = document.getElementById('successBanner');
+            const message = document.getElementById('successMessage');
+            
+            // Set the success message
+            message.textContent = `✅ Obrigado! Seu e-mail "${email}" foi registrado com sucesso na nossa lista VIP!`;
+            
+            // Show the banner with smooth animation
+            banner.classList.remove('hidden');
+            banner.style.opacity = '0';
+            banner.style.transform = 'translateY(-10px)';
+            
+            // Animate in
+            setTimeout(() => {
+                banner.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                banner.style.opacity = '1';
+                banner.style.transform = 'translateY(0)';
+            }, 100);
+            
+            // Hide after 10 seconds
+            setTimeout(() => {
+                banner.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                banner.style.opacity = '0';
+                banner.style.transform = 'translateY(-10px)';
+                
+                // Remove from DOM after animation
+                setTimeout(() => {
+                    banner.classList.add('hidden');
+                }, 500);
+            }, 10000);
+        }
+
+        // Email Form Submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailForm = document.getElementById('emailForm');
+            
+            emailForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('emailInput').value;
+                
+                if (email) {
+                    // Here you would integrate with Supabase or your email capture system
+                    // Example Supabase integration:
+                    // await supabase.from('waitlist').insert([{ email: email, created_at: new Date() }]);
+                    
+                    // Show success banner instead of alert
+                    showSuccessBanner(email);
+                    
+                    // Reset form
+                    emailForm.reset();
+                }
+            });
+        });
+
+        // Redirect all CTA buttons to email input
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all buttons that should redirect to email input
+            const ctaButtons = document.querySelectorAll('button:not([onclick]):not([type="submit"]):not(.privacy-btn)');
+            
+            console.log('Found CTA buttons:', ctaButtons.length); // Debug
+            
+            ctaButtons.forEach((button, index) => {
+                // Skip buttons that contain specific text
+                if (button.textContent.includes('Landing Page') ||
+                    button.textContent.includes('Garantir meu acesso')) {
+                    return;
+                }
+                
+                console.log(`Adding click handler to button ${index}:`, button.textContent); // Debug
+                
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Button clicked, scrolling to email input'); // Debug
+                    scrollToEmailInput();
+                });
+            });
+        });
+
+        // Simple scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
