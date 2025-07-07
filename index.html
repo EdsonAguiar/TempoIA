@@ -76,6 +76,9 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
         
         .nav-logo .ia-highlight {
@@ -85,6 +88,14 @@
             background-clip: text;
             text-shadow: 0 0 20px rgba(64, 165, 250, 0.6);
             filter: drop-shadow(0 0 10px rgba(64, 165, 250, 0.4));
+        }
+        
+        .nav-tagline {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: -2px;
+            line-height: 1;
         }
         
         .nav-links {
@@ -158,7 +169,10 @@
         <!-- Header Navigation -->
         <nav class="header-nav">
             <div class="container mx-auto px-4 flex justify-between items-center">
-                <div class="nav-logo">Tempo<span class="ia-highlight">IA</span></div>
+                <div class="nav-logo">
+                    <div>Tempo<span class="ia-highlight">IA</span></div>
+                    <div class="nav-tagline">Agência de Inteligência Artificial para Negócios</div>
+                </div>
                 <div class="nav-links">
                     <a href="#inicio">Início</a>
                     <a href="#problemas">Problemas</a>
@@ -181,7 +195,7 @@
             <div class="container mx-auto px-4 relative z-10">
                 <div class="flex flex-col items-center justify-center min-h-screen text-center pt-20">
                     <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        Liberte seu <span class="text-gradient">Tempo</span>: Soluções de IA que ainda não existem, mas que você precisa
+                        Liberte seu <span class="text-gradient">Tempo</span>: Soluções de <span class="text-gradient">IA</span> que ainda não existem, mas que seu negócio precisa
                     </h1>
                     
                     <h2 class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl leading-relaxed">
@@ -294,7 +308,7 @@
                         </div>
                         <h3 class="text-2xl font-semibold mb-4">Manifeste seu Interesse</h3>
                         <p class="text-gray-600 leading-relaxed">
-                            Preencha nosso formulário rápido com seu nome e e-mail. Leva menos de 30 segundos.
+                            Preencha nosso formulário rápido com seu e-mail. Leva menos de 30 segundos.
                         </p>
                     </div>
                     
@@ -330,7 +344,7 @@
                     </h2>
                     
                     <p class="text-xl text-gray-600 leading-relaxed">
-                        A <span style="font-size: 1.25rem; font-weight: 700; background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TempoIA</span> é o resultado de mais de 30 anos de experiência em otimização de processos de negócios. 
+                        A <span style="font-size: 1.25rem; font-weight: 700; background: linear-gradient(to right, #266294 0%, #398CBE 50%, #40A5D1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TempoIA</span> é o resultado de muitos anos de experiência em otimização de processos de negócios. 
                         Nós unimos a sabedoria do mercado com a velocidade da inovação para usar a IA como uma ferramenta 
                         poderosa para gerar eficiência e lucro.
                     </p>
@@ -403,7 +417,9 @@
             <div class="container mx-auto px-4">
                 <div class="grid md:grid-cols-4 gap-8">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">TempoIA</h3>
+                        <h3 class="text-xl font-bold mb-4">
+                            Tempo<span style="background: linear-gradient(135deg, #40a5fa 0%, #60c5ff 50%, #80e5ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 20px rgba(64, 165, 250, 0.6); filter: drop-shadow(0 0 10px rgba(64, 165, 250, 0.4));">IA</span>
+                        </h3>
                         <p class="text-gray-300 leading-relaxed">
                             Transformando empresas através de soluções inteligentes de IA.
                         </p>
